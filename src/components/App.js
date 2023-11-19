@@ -33,6 +33,7 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (isLoggedIn) { 
     Promise.all([api.getUserInfo(),api.getCardList()])
     .then(([ userInfo, cardList ]) => {
       setCurrentUser(userInfo);
@@ -41,7 +42,8 @@ function App() {
     .catch((err) => {
       console.error(err);
     });
-  }, []);
+    }
+  }, [isLoggedIn]);
 
   function handleCardLike(card) {
     const isLiked = card.likes.some(i => i._id === currentUser._id);

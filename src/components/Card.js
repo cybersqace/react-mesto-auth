@@ -32,10 +32,10 @@ function Card ({ card, onCardClick, onCardLike, onCardDelete }) {
       <div className="element__caption">
         <h2 className="element__title">{card.name}</h2>
         <div className="element__group">
-          <button className={cardLikeButtonClassName} type="button" aria-label="кнопка лайка" onClick={handleLikeClick}></button>
+          <button className={cardLikeButtonClassName} type="button" aria-label="кнопка лайка" onClick={handleLikeClick}/>
           <span className="element__likes">{card.likes.length}</span>
         </div>
-        {isOwn && (<button className="element__delete-button" type="button" aria-label="кнопка удаления" onClick={handleDeleteClick}></button> )}
+        {isOwn && (<button className="element__delete-button" type="button" aria-label="кнопка удаления" onClick={handleDeleteClick}/> )}
       </div>
     </li>
   );
