@@ -1,0 +1,19 @@
+.header__menu {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+@media screen and (max-width:1080px) {
+  .header__menu {
+    margin-right: 30px;
+    padding-bottom: 31px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header__menu {
+    flex-direction: column;
+    margin: auto;
+  }
+}

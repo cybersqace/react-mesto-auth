@@ -1,0 +1,15 @@
+.auth__button {
+  width: 100%;
+  max-width: 358px;
+  min-height: 50px;
+  margin-top: 216px;
+  border-radius: 2px;
+  background: #FFF;
+  align-self: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .auth__button{
+    max-width: calc(260px + (358 - 260) * ((100vw - 320px) / (1279 - 320)));
+  }
+}

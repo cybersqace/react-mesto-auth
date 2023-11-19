@@ -1,0 +1,10 @@
+.auth__login-link {
+  margin-top: 15px;
+  max-width: 358px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}

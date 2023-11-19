@@ -1,0 +1,36 @@
+.form__submit {
+  margin-top: 48px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  max-width: 358px;
+  width: 100%;
+  border-radius: 2px;
+  background: #000;
+  cursor: pointer;
+  transition: opacity 1s;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form__submit:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width:1279px) {
+  .form__submit {
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1279 - 320)));
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .form__submit {
+    margin-top: 45px;
+    padding-bottom: 14px;
+  }
+}
